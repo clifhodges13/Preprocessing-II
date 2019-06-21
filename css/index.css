@@ -312,6 +312,8 @@ img {
 @media (max-width: 500px) {
   .home .content-pick {
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     padding: 5% 10%;
   }
@@ -335,4 +337,9 @@ img {
   font-size: 1.8rem;
   text-align: center;
   width: 90%;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination .btn {
+    width: 100%;
+  }
 }

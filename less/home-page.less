@@ -89,6 +89,8 @@
 
     @media @mobile {
       flex-direction: column;
+      justify-content: center;
+      align-items: center;
       width: 100%;
       padding: 5% 10%;
     }
@@ -99,11 +101,16 @@
 
       @media @mobile {
         width: 100%;
+        
       }
 
       .btn {
         .btn(@white, @button-bg, 5% 0, none);
         width: 90%;
+
+        @media @mobile {
+          width: 100%;
+        }
       }
     }
   }
