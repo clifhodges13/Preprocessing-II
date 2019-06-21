@@ -215,6 +215,14 @@ img {
   text-decoration: none;
   color: #212529;
   font-size: 1.6rem;
+  transition: all 0.2s ease-out;
+}
+.container-nav .nav .menu a:hover {
+  padding: 0 10%;
+  transform: translateY(-5%) scale(1.05);
+  color: #FFFFFF;
+  background: #17A2B8;
+  border-radius: 10px;
 }
 .footer {
   width: 100%;
@@ -337,6 +345,12 @@ img {
   font-size: 1.8rem;
   text-align: center;
   width: 90%;
+}
+.home .content-pick .destination .btn:hover {
+  transform: translateY(-5%) scale(1.05);
+  color: #212529;
+  background: transparent;
+  border: 2px dashed #C0C0C0;
 }
 @media (max-width: 500px) {
   .home .content-pick .destination .btn {

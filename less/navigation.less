@@ -7,33 +7,41 @@
     margin: 0 auto;
     .flex(row nowrap, space-between, center);
     padding: 3% 0;
+
     
     @media @mobile {
       flex-direction: column;
     }
-  
+    
     .logo {
       font-size: 4rem;
-
+      
       @media @mobile {
         font-size: 3.25rem;
         margin-bottom: 4%;
       }
     }
-
+    
     .menu {
       .flex(row nowrap, space-between, center);
       width: 40%;
-
+      
       @media @mobile {
         width: 100%;
         justify-content: space-around;
       }
-
+      
       a {
         text-decoration: none;
         color: @font-color;
         font-size: 1.6rem;
+        transition: all .2s ease-out;
+        
+        &:hover {
+          padding: 0 10%;
+          .animate(translateY(-5%), scale(1.05), @main-bg, @button-bg);
+          border-radius: 10px;
+        }
       }
     }
   }

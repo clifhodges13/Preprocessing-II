@@ -108,6 +108,11 @@
         .btn(@white, @button-bg, 5% 0, none);
         width: 90%;
 
+        &:hover {
+          .animate(translateY(-5%), scale(1.05), @shark, transparent);
+          border: @dashedBorder;
+        }
+
         @media @mobile {
           width: 100%;
         }
