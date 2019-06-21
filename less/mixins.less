@@ -1,1 +1,28 @@
-// Mixins in here
+// flexbox
+
+.flex(@flow, @justify, @align) {
+  display: flex;
+  justify-content: @justify;
+  align-items: @align;
+}
+
+// button
+
+.btn(@color, @bg, @margin, @border) {
+  color: @color;
+  background: @bg;
+  padding: 5% 10%;
+  margin: @margin;
+  border: @border;
+  border-radius: 15px;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+// animations
+
+.animate(@translate, @scale, @color, @bg) {
+  transform: @translate @scale;
+  color: @color;
+  background: @bg;
+}
